@@ -9,8 +9,16 @@
             
         <script type="text/javascript">
             d3.select('body')
-                .append('p')
-                .text('Hello World');
+                .append('svg')
+                .attr("height",50)
+                .attr("width",50);
+                
+            d3.select("svg")
+                .append("circle")
+                .attr("cx",25)
+                .attr("cy",25)
+                .attr("r",25)
+                .attr("fill","purple");
         </script>
     </body>
 </html>
